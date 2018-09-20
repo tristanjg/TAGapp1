@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_layer"
+    tools:context="com.example.tristan.tagapp.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taglogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="134dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/toyotalogo" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="40dp"
+        android:drawableTop="@drawable/ic_callus"
+        android:paddingBottom="20px"
+        android:text="Call Us"
+        android:textColor="@color/iconcolor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="40dp"
+        android:drawableTop="@drawable/ic_service"
+        android:paddingBottom="20px"
+        android:text="Service"
+        android:textColor="@color/iconcolor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginStart="40dp"
+        android:drawableTop="@drawable/ic_refernearn"
+        android:paddingBottom="20px"
+        android:text="Refer and Earn"
+        android:textColor="@color/iconcolor"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="225px"
+        android:layout_height="150px"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableTop="@drawable/ic_gas"
+        android:paddingBottom="20px"
+        android:text="Gas Prices"
+        android:textColor="@color/iconcolor"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="225px"
+        android:layout_height="150px"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableTop="@drawable/ic_specials"
+        android:paddingBottom="20px"
+        android:text="Specials"
+        android:textColor="@color/iconcolor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginEnd="40dp"
+        android:drawableTop="@drawable/ic_parkbuddy"
+        android:paddingBottom="20px"
+        android:text="Parking Buddy"
+        android:textColor="@color/iconcolor"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</android.support.constraint.ConstraintLayout>
