@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".callmee" />
+        <activity android:name=".service" />
+        <activity android:name=".specials" />
+        <activity android:name=".inventory" />
+        <activity android:name=".tradein" />
+        <activity android:name=".refernearn"></activity>
     </application>
 
 </manifest>
