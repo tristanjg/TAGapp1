@@ -1,5 +1,7 @@
 package com.example.tristan.tagapp;
 
+import android.graphics.drawable.AnimationDrawable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,11 +15,20 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonfour;
     private Button buttonfive;
     private Button buttonsix;
+    ConstraintLayout myLayout;
+    AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myLayout = (ConstraintLayout) findViewById(R.id.myLayout);
+
+        animationDrawable = (AnimationDrawable) myLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(4500);
+        animationDrawable.setExitFadeDuration(4500);
+        animationDrawable.start();
 
         button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/first_layer"
+    android:background="@drawable/my_bg_anim"
+    android:id="@+id/myLayout"
     tools:context="com.example.tristan.tagapp.MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
